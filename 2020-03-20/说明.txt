@@ -1,0 +1,6 @@
+1.参考"作业.jpg"图片所给盒子模型，及练习题。
+将 index.html, site.css, site.js 填好， 再添加一张最后做完后的jpg格式的截图（<1M）
+使用 div + css
+用到 width, height, margin, padding, border，display
+完成练习1， 2， 3
+最后使用git命令提交
