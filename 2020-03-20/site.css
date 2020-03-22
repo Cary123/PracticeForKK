@@ -30,20 +30,127 @@
     background-color: lavender;
     width: auto;
     height: 40px;
+    
+    
 }
 
 
 .lianxi2 {
     border: 2px solid gainsboro;
-    widows: 100px;;
-    height: 250px;
+    width: 340px;
+    height: 120px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
 }
-.lianxi2 .d3 div {
-    border: 2px solid #ffffff;
-    width: 50px;
-    height: 50px;
-    display: inline;
+
+
+
+.lianxi2 .d3 .two1 {
+    border: 2px solid gainsboro;
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 10px;
+   
     
 
+}
+.lianxi2 .d3 .two2 {
+    border: 2px solid gainsboro;
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+   
+   
 
 }
+.lianxi2 .d3 .two3 {
+    border: 2px solid gainsboro;
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+
+}
+
+
+
+.lianxi3 {
+    border: 2px solid gainsboro;
+    width: 450px;
+    height: 130px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+.img1 {
+    text-align: center;
+ 
+}
+
+.lianxi3 .d4 .three1 {
+    border: 2px solid rgb(236, 233, 233);
+    background-color: rgb(236, 233, 233);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 10px;
+    /* padding: 10px; */
+    padding-top: 10px;
+   
+   
+    
+
+}
+.text {
+    text-align: center;
+}
+
+.lianxi3 .d4 .three2 {
+    border: 2px solid  rgb(236, 233, 233);
+    background-color: rgb(236, 233, 233);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+   
+   
+    
+
+}
+.lianxi3 .d4 .three3 {
+    border: 2px solid rgb(236, 233, 233);
+    background-color: rgb(236, 233, 233);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+  
+    
+   
+    
+
+}
+.lianxi3 .d4 .three4 {
+    border: 2px solid rgb(236, 233, 233);
+    background-color: rgb(236, 233, 233);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+    
+   
+    
+
+}
+
