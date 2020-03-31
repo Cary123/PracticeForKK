@@ -1,0 +1,87 @@
+p {
+    display: inline;  /* 横并排显示 本来P是块级元素，是另起一行显示的 */
+}
+#content {
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+#content div {
+    flex: 1;  /* 所有弹性盒模型对象的子元素都有相同的长度，且忽略他们内部的内容 */
+
+}
+#content2 {
+    width: 120px;
+    height: 24px;
+    border: 1px solid gainsboro;
+    display: inline-flex;
+}
+#content2 div {
+    flex-basis: 10px; /*  为什么我小变化值它不怎么变呢？ */
+                        /* 原来是basis 和grow 和 shrink 息息相关的？那怎样息息相关呢? */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#content2 div:nth-of-type(2){
+    flex-basis: 100px;
+}
+#content3 {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display:flex;
+   /*  flex-direction: row-reverse;  */ /* row是水平不反转排列；column n.圆柱；纵列；列  column-reverse:纵向反转； */
+    /* initial:初始值；  inherit从父元素继承该元素属性； */
+    flex-flow: row-reverse wrap;  /* flex-wrap 属性规定灵活项目是否拆行或拆列。 */
+}
+#content3 div {
+    flex-basis: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100px;  /* 难道宽我们决定不了吗？ */
+    height: 100px;
+}
+#content4 {
+    width: 350px;
+    height: 100px;
+    border: 1px solid gray;
+    display: flex;
+}
+#content4 div:nth-of-type(1) {flex-grow: 1;}
+#content4 div:nth-of-type(2) {flex-grow: 2;}
+#content4 div:nth-of-type(3) {flex-grow: 1;}
+#content4 div:nth-of-type(4) {flex-grow: 1;}
+
+
+
+
+#content5 {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    
+}
+#content5 div {
+    flex-basis: 120px;
+    border: 1px solid gray;
+    
+}
+.box1 {
+    flex-shrink: 1;
+}
+.box2 {
+    flex-shrink: 5;
+}
+#content6 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#content6 div {
+    width: 60px;
+    height: 50px;
+}

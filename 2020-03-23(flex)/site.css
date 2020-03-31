@@ -1,0 +1,290 @@
+
+/* // 整体的背景黑色 */
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  background: linear-gradient(top, #222, #333);
+}
+ */
+
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    
+    background: linear-gradient(top, #222, #333);
+    background-color: #111; 
+}
+#main {
+    border: 1px solid gainsboro;
+}
+
+/* // 白色面板的样式 */
+.panel{
+  margin: 16px;
+  padding: 4px;
+  
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  
+  box-shadow:
+    inset 0 5px white, 
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7;
+  
+  border-radius: 10%;
+}
+
+/* // 黑色圆圈的样式 */
+.point {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+
+/* //------------------------------------------------------------------------------------------------- */
+/* 棋子1 */
+/* // html 代码块: */
+/* <div class="panel first-face">
+  <span class="point"></span>
+</div>
+ */
+
+/* // css代码块，除了上面的css，还需要： */
+.onerow {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.first1-face {
+  display: flex;
+  justify-content: flex-start;   /* 横轴左对齐 */
+  /* align-items: center; */
+}
+.two1-face {
+    display: flex;
+    justify-content: center;      /* 横轴中心对齐 */
+    /* align-items: center; */
+  }
+  .three1-face {
+    display: flex;
+    justify-content: flex-end;   /* 横轴右对齐 */
+    /* align-items: center; */
+  }
+  .four1-face {
+    display: flex;
+    justify-content: flex-start;    /* 横轴左对齐 */
+    align-items: center;            /* 纵轴中心对齐 */
+  }
+  .five1-face {
+    display: flex;
+    justify-content: center;     /* 横轴中心对齐 */
+    align-items: center;             /* 纵轴中心对齐 */
+  }
+  .six1-face {
+    display: flex;    
+    justify-content: center;        /* 横轴中心对齐 */
+    align-items:flex-end;           /* 横轴下对齐 */
+  }
+  .seven1-face {
+    display: flex;
+    justify-content: flex-end;     /* 横轴右对齐 */
+    align-items:flex-end;          /* 横轴右对齐 */
+  }
+/* .eight1-face {                     下左
+      display: flex;
+      justify-content: flex-start;  
+      align-items: flex-end;
+  }
+  .nine1-face {                     中右
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+}  */
+
+.tworow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.one2-face {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.two2-face {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.three2-face {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
+}
+.four2-face {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.five2-face {
+    display: flex;
+    /* justify-content: space-between;  */
+
+}
+.three30-face {
+    display: flex;
+    align-self: center;
+    /* align-items: center;
+    justify-content: center; */
+}
+/* .six2-face {
+    display: flex;
+    justify-content: space-between; 
+
+} */
+.three32-face {
+    display: flex;
+    justify-content: space-around;     /* 横轴右对齐 */
+    align-items:flex-end; 
+    align-self: flex-end;
+   
+}
+
+.threerow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.one3-face {
+    display: flex;
+    /* justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row; */
+}
+.two3-face {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.three3-face {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+
+}
+.three38-face {
+    display: flex;
+    align-self: center;
+}
+.three39-face {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.first40-face {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.three41-face {
+    display: flex;
+   /*  align-self: flex-end; */
+    justify-content: flex-end;
+    
+  }
+  .three46-face {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+  .three42-face {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+   
+  }
+  
+.five3-face {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+
+.fourrow {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.four1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.four21 {
+   /*  display: flex; */
+    align-self: flex-end;
+   
+}
+.four22 {
+  /* display: flex; */
+  align-self: flex-end;
+ 
+}
+/* .four21 {
+    display: flex;
+    align-items: flex-end;
+}
+.four22 {
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: space-between;
+} */
+
+.four3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+
+
+.fiverow {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.four3-face {
+    display: flex;
+
+}

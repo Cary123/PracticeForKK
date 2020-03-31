@@ -1,0 +1,40 @@
+.div-bg-gray {
+    background-color: lavender;
+    height:30px;
+}
+.border {
+    border:1px solid gray ;
+    width: 190px;
+    height: 60px;
+    padding-top: 10px;
+    
+}
+.div-block {
+    background-color: gainsboro;
+    width: 50px;
+    height: 50px;
+}
+.direction-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.lianxi-3-border {
+    border:1px solid gray ;
+    width: 500px;
+    height: 143px;
+    padding-top: 10px;
+   background-color: lightgreen;
+    
+}
+.div-block-2 {
+    background-color: lightgrey;
+    width: 100px;
+    height: 100px;
+}
+.align-self-center {
+    align-self: center;
+}
+.text-center {
+    text-align: center;
+}

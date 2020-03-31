@@ -1,0 +1,110 @@
+/* // 整体的背景黑色 */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  background-color: black;
+}
+/* // 白色面板的样式 */
+.panel{
+  margin: 16px;
+  padding: 4px;
+  
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  
+  box-shadow:
+    inset 0 5px white, 
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7;
+  
+  border-radius: 10%;
+}
+
+/* // 黑色圆圈的样式 */
+.point {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+.onerow {
+  display: flex;
+  justify-content: space-between;
+}
+.directionr {
+  display: flex;
+  flex-direction: row;
+
+}
+.directionc {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.onep1 {
+    
+   align-items: flex-start;
+
+  }
+.onep2 {
+   
+   align-items: center;
+}
+.onep3 {
+  align-items: flex-end;
+}
+.onep4 {
+  display: flex;
+  justify-content: center;
+}
+.point14 {
+  
+  align-self: center;
+}
+.onep5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.point15 {
+  /* display: flex; */   /* 棋子不需要设置flex */
+  /* align-items: center; */
+  align-self: center;
+}
+.point16 {
+  display: flex;
+  align-self: flex-end;
+}
+.a-self-start {
+  display: flex;
+  align-self: flex-start;
+}
+.onep7 {
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.tworow {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+}
+.justifys {
+  display: flex;
+  justify-content: space-between;
+}
