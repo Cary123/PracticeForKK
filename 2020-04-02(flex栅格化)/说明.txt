@@ -1,0 +1,9 @@
+1. 学习
+flex-grow
+flex-shrink
+flex-basis
+的单独用法。
+和混合用法。有点像border的用法，三个参数：
+比如： flex: 0 1 auto;
+
+参考： http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
