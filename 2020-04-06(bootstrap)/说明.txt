@@ -1,0 +1,94 @@
+下载地址：
+https://v4.bootcss.com/docs/getting-started/download/
+点击下载Bootstrap，下载完成后解压，解压包放在项目的目录下面
+1.引入bootstrap的css文件
+2.引入bootstrap的js文件
+
+学习可以参考官方文档：https://v4.bootcss.com/docs/components/alerts/
+学习可以参考菜鸟教程：https://www.runoob.com/bootstrap/bootstrap-tutorial.html
+这里有个工具可以拖拖拽拽然后生成代码：https://www.runoob.com/try/bootstrap/layoutit/
+
+学习如下用法：
+1. 布局： https://v4.bootcss.com/docs/layout/overview/
+     学会下面的css用法
+     (1) .container    不同尺寸的宽度是一个固定的大小
+     (2) .container-fluid  总是100%的宽度
+     (3) .no-gutters 没有padding
+     (4) bootstrap里面默认定义了一些css,方便我们使用：(总共只有5个量级，单位是em，这里要了解em和px的区别)
+	比如margin-left多少px的写法：ml-1, ml-2, ml-3, ml-4, ml-5
+                比如padding-right多少px的写法：pr-1, pr-2, pr-3, pr-4, pr-5
+                以此类推
+                 
+2. 栅格系统：https://v4.bootcss.com/docs/layout/grid/
+学习 container，row，col-x (x是1到12的数字，和我们之前学的几等分是一个意思。bootstrap一行总共12等分)
+<div class="container">
+
+  <div class="row">
+    <div class="col-4">
+      One of three columns
+    </div>
+    <div class="col-4">
+      One of three columns
+    </div>
+    <div class="col-4">
+      One of three columns
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      One of three columns
+    </div>
+    <div class="col-4">
+      One of three columns
+    </div>
+    <div class="col-4">
+      One of three columns
+    </div>
+  </div>
+
+</div>
+
+3.学会常用的一些样式
+   (1) 学会按钮的bootstrap样式
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+这些样式也可以作用在其它标签：
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+（2）学会表单form的相关css
+比如：form-group  form-control form-text
+一般一个form-group里面有一个label和一个input， label的for属性和input的id属性是绑定在一起的（js控制）
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  
+ (3). bootstrap的table用法，分页组件，导航栏， 这部分了解即可
+
+作业：
+综合所学：把登录注册，学生成绩录入， 学生成绩列表等页面做出来，bootstrap和自己所学的css结合使用
+时间：两周
