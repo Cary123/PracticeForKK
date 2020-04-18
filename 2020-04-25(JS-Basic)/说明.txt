@@ -1,0 +1,17 @@
+1. js是干嘛用的
+2. 引入js文件
+3. 
+使用 window.alert() 弹出警告框。
+使用 console.log() 写入到浏览器的控制台。
+4. js是一种轻量级的，弱类型的语言
+    比如c语言可以定义 int， long， double， char
+    但是在js里面只有var类型，它会根据你给的value值自动识别
+5. 学会如下类型
+var x;               // x 为 undefined
+var x = 5;           // 现在 x 为数字
+var x = "John";      // 现在 x 为字符
+var cars=["Saab","Volvo","BMW"]; //数组
+var person={firstname:"John", lastname:"Doe", id:5566}; //对象，其实就是json对象
+6. 学会如何操作对象和数组
+7. 学会js的if/else语句，for循环
+8. 学会js的函数定义和使用
