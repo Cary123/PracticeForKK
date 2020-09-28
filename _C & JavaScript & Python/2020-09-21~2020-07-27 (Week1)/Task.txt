@@ -1,0 +1,50 @@
+同时学习C语言，JavaScript和Python, 要学到什么程度呢？能信手拈来，不翻文档，能使用三种语言写算法。
+
+这三种语言的学习都可以参考菜鸟教程和官方文档，最好不要看视频，多写多练
+
+这周的任务
+1. 把环境弄好
+2. 了解三种语言都能干什么，发展历史，用途
+3. 不同语言的文件后缀名是啥
+4. 后三种语言都能写个在控制台打印hello world的程序
+5. 把一周的任务涉及的程序代码写在index.c, index.js, index.py里面，周末提交到github上，我检查
+
+
+1. 学习资料
+
+C:
+https://www.runoob.com/cprogramming/c-tutorial.html
+
+javascript:
+https://www.runoob.com/js/js-tutorial.html
+
+python: python有两个版本（python2和python3），自己选，推荐python3，因为python2不更新了
+python2： https://www.runoob.com/python/python-tutorial.html
+python3： https://www.runoob.com/python3/python3-tutorial.html
+
+2. 在线的编译器
+
+C:
+https://www.runoob.com/try/runcode.php?filename=helloworld&type=c
+
+python:
+https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
+
+javascript:
+https://www.runoob.com/try/try.php?filename=tryjs_while
+
+3. 也可以自己使用VS Code，配一套环境自己的环境 （推荐）
+C语言的环境安装比较复杂，参考下面的安装步骤，你已经有VS code了，只需要安装C语言的编译器和插件即可
+
+JavaScript:
+https://blog.csdn.net/alokka/article/details/102802999
+
+C:
+https://zhuanlan.zhihu.com/p/77645306
+
+Python：
+https://www.jianshu.com/p/cbf500c22154
+
+
+
+
