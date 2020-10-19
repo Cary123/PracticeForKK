@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(247, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid rgb(243, 237, 237);
+    border-radius: 5px;
+    
+    background-color: white;
+    margin: auto;
+    width: 30%;
+    padding: 50px 30px;
+    margin: 50px;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+.width-100 {
+    width: 100%;
+}
+.algin-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.direction-row {
+    /* display: flex; */
+    flex-direction: row;
+}
+.direction-column {
+    /* display: flex; */
+    flex-direction: column;
+}
+.login-btn {
+    text-align: center;
+}
+.input-form {
+    
+}
+.input-name {
+    border: 1px solid rgb(158, 156, 156);
+    border-bottom: 0px;
+    background-color: rgb(238, 237, 237);
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    padding: 15px;
+    
+    margin-bottom: 0px;
+    align-self: center;
+    
+
+
+}
+.input-pwd {
+    border: 1px solid rgb(158, 156, 156);
+    background-color: rgb(238, 237, 237);
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    align-self: center;
+
+}
+.remember-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.input-checkbox {
+    align-self: flex-start;
+    padding-left: 2px;
+    
+    
+}
+.forget-btn {
+    align-self: flex-end; 
+     padding-right: 2px;
+    
+}
+
+.btn-login {
+    background-color: rgb(85, 134, 214);
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 0px;
+    border-style: none;
+    outline: none;
+    
+}
+/* .btn-login:hover {
+    color: rgb(5, 18, 36);
+    
+    
+} */

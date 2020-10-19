@@ -51,15 +51,15 @@ https://v4.bootcss.com/docs/getting-started/download/
 
 3.学会常用的一些样式
    (1) 学会按钮的bootstrap样式
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button>
+<button type="button" class="btn btn-primary">Primary</button>     主要按钮 蓝色 是最长用的；
+<button type="button" class="btn btn-secondary">Secondary</button> 次要按钮；  灰色
+<button type="button" class="btn btn-success">Success</button>  成功按钮绿色的
+<button type="button" class="btn btn-danger">Danger</button>    危险按钮，红色的
+<button type="button" class="btn btn-warning">Warning</button>  警告按钮，黄色的
+<button type="button" class="btn btn-info">Info</button>        信息通知按钮，    深蓝色
+<button type="button" class="btn btn-light">Light</button>      浅灰色按钮
+<button type="button" class="btn btn-dark">Dark</button>        黑色按钮
+<button type="button" class="btn btn-link">Link</button>        链接按钮
 这些样式也可以作用在其它标签：
 <a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
