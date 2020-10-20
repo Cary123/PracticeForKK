@@ -41,6 +41,18 @@ function num(array) {
 
 // Input:  [1, 2, 5, 6, 79, 1]
 // Output:  [2, 81, 11]
+var Input2 = [1, 2, 5, 6, 79, 1];
+function myfunction2(array2) {
+    var n = [];
+    for (var i = 0; i < array2.length/2; i++) {
+        var num2 = array2[i] + array2[array2.length - (i + 1)]
+        n.push(num2);
+
+    }
+    return n;
+
+}
+//console.log(myfunction2(Input2));  //为什么是打印input2呢？而不是n 或者别的呢？
 
 
 
@@ -48,3 +60,5 @@ function num(array) {
 // for (var i=0;i<cars.length;i++){
 // 	document.write(cars[i] + "<br>");
 // }
+
+
