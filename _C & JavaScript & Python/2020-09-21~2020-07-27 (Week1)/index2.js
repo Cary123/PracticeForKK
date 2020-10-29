@@ -8,12 +8,12 @@ function count(array) {
     var countMan = 0;
     var countWoman = 0;
     var countUnknow = 0;
-    for (var i = 0; i < Input.length; i++) {
-        if (Input[i] === 'M') {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === 'M') {
             countMan = countMan + 1;
 
         }
-        else if (Input[i] === 'W') {
+        else if (array[i] === 'W') {
             countWoman = countWoman + 1;
 
         }
@@ -31,7 +31,7 @@ function count(array) {
 }
  console.log(count(Input));
 
-//why don't console.log(count(Input[i]))? Maybe function count(array) {}
+//why don't console.log(count(Input[i]))? Maybe function count(array) {}; array is a formal parameter;
 //how to accumulate again ? counMan = counMan + 1;
 //How to put h.push(countMan); ? I think it is behind for () {}
 //attention: if (?need to write === , doesn't =) {}
@@ -41,8 +41,8 @@ function count2(array) {
     var countMan = 0;
     var countWoman = 0;
     var countUnknow = 0;
-    for (var i = 0; i < Input.length; i++) {
-        switch (Input[i]) {
+    for (var i = 0; i < array.length; i++) {
+        switch (array[i]) {
             // case countMan === 'M':
             case 'M':
                 countMan = countMan + 1;
