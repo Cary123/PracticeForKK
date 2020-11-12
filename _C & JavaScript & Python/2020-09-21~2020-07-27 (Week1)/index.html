@@ -4,9 +4,32 @@
 <head>
     <meta charset="utf-8">
     <title>菜鸟教程(runoob.com)</title>
-    <script src="index.js"></script>
+    <script src="index4.js"></script>
 </head>
 
+<h1>Hello World</h1>
+	<h1>Hello</h1>
+<p id="demo">单击按钮来创建一个“类”属性值“democlass”插入到上面的H1元素。</p>
+<button onclick="myFunction()">点我</button>
+
+<div>
+    
+
+</div>
+
+<script>
+function myFunction(){
+	var h1=document.getElementsByTagName("H1")[1];
+	var att=document.createAttribute("class");
+	att.value="democlass";
+	var attr2=document.createAttribute("style");
+	attr2.value="box-shadowmargin:auto; line-height: 250px; text-align: center; border-radius: 50%; width: 250px; height: 250px; border: 1px solid blue";
+	h1.setAttributeNode(att);
+	h1.setAttributeNode(attr2);
+}
+
+// <!-- /*JavaScript setTimeout() 用法详解 -->
+// <!-- Window setInterval() 方法 -->
 
 <body>
 
@@ -14,18 +37,20 @@
     <p id="demo">这是一个段落</p>
 
     <button type="button" onclick="displayDate()">显示日期</button>
+    <button type="button" onclick="circle()"> btn </button>
+
 </body>
 
-</html>
+// </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>my first page</p>
-</body>
-</html> -->
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <p>my first page</p>
+// </body>
+// </html> 

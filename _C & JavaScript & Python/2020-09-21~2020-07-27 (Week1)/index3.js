@@ -73,3 +73,29 @@ function Min(array) {
 }
 console.log(Min(Input));
 //h.push(Min); in for () {} and out are different ?
+
+
+
+
+// [1,2 ,3 ,4 ]
+// [1,2 ,3 ,4 ]
+//output [{a:1, b:1},{a:2,b:2},{a:3,b:3},{a:4,b:4}]
+function merge(arr1, arr2) {
+    var h = [];
+    if(arr1.length === arr2.length) {
+        for(var i = 0; i < arr1.length; i++) {
+            var obj = {a: arr1[i], b: arr2[i]};
+            obj.a = obj.a + obj.b;
+            // h.push({a: arr1[i], b: arr2[i]});
+            h.push(obj)
+    
+        }
+
+    }
+    return h;
+}
+console.log(merge([1,2 ,3 ,4 ],[1,2 ,3 ,4 ]));
+
+// [1,2 ,3 ,4 ]
+// [1,2 ,3 ,4 ]
+//output [{a:1, b:1},{a:1,b:2},{a:1,b:3},{a:1,b:4},{a:2, b:1},{a:2, b:2},{a:2, b:3}... ]

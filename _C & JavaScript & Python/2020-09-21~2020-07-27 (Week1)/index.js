@@ -1,20 +1,36 @@
 // console.log("hello" + 1 + false +"he")
 // console.log(1+"2")
 // console.log(3*"2.5")
-
-// console.log("HelloWorld")
+console.debug("eeee")
+console.log("HelloWorld")
+console.error("Some thing error happended")
 
 var Numbers = ["Molly", "Jack", "Job", "Mike"];
+var people = { name: "keke", age: "18" }
+var address1 = { belong: "home", location: "Wuhan" }
+var address2 = { belong: "school", location: "Shanghai" }
+var message = { owner: people, addresses: [address1, address2] }
+console.log(message)
 // console.log(Numbers.length) //How much items in array
 
 for (var i = 0; i < Numbers.length; i++) {
-    // console.log(Numbers[i]);
+    console.log(Numbers[i]);
 }
 
 var Numbers = ["Molly", "Jack", "Job", "Mike"];
+function compareTwoNumber(a, b) {
+ if (a > b) {
+     return a;
+ } else {
+     return b;
+ }
+}
+console.log(compareTwoNumber(5, 6))
+
 function myfunction(array) {
     var h = []
     for (var i = 0; i < array.length; i++) {
+
 
         var element = array[i];
         var prefix = element[0];
@@ -23,6 +39,7 @@ function myfunction(array) {
     return h;
 
 }
+h.push("a")
 // console.log(myfunction(Numbers))
 
 // Input:  [1, 2, 5, 6, 79, 1]
@@ -137,19 +154,19 @@ function elect(Input3) {
 }
 
 
-function electment(Input3){
+function electment(Input3) {
     var h = [];
 
-    for(var i = 0; i<Input3.length; i++){
-       
-        switch(Input3[i]){
+    for (var i = 0; i < Input3.length; i++) {
+
+        switch (Input3[i]) {
             case "Saturday":
-                 h.push(false);
-                 break;
+                h.push(false);
+                break;
             case "Sunday":
                 h.push(false);
                 break;
-            default :
+            default:
                 h.push(true);
                 break;
 
