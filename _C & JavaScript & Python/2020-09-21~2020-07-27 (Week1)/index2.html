@@ -15,6 +15,13 @@
             box-shadow:3px 3px 10px red;
         }
 
+        .delta {
+            border: 100px solid red;
+            width: 0px;
+            height: 0px;
+            border-color: transparent transparent red transparent;
+        }
+
     </style>  
 </head>
 <body>
@@ -24,7 +31,13 @@
     
     <button onclick="createCircle()">click me </button>
 
-    <button onclick="moveCircle()">move circle</button>
+    <button onclick="moveCircle()">move circle</button><br>
+
+    <button onclick="createDelta()">click delta</button>
+
+    <button onclick="moveDelta()">move delta</button>
+
+    <!-- <div class="delta"></div> -->
 
 </body>
 </html>
