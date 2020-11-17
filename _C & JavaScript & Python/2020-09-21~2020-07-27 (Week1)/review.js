@@ -120,6 +120,32 @@ console.log(single([3,4,6,8,7,5,6,13,7]));
 
 var number = 12;
 var str = "Hello";
+
+//全局变量与局部变量
+function square(num) {
+    var total = num * num;
+    return total;
+
+}
+var total = 50;
+var number = square(20);
+console.log(total);
+console.log(number);
+
+var num = 9.36738;
+var num = Math.round(num);
+console.log(num);
+console.log(Math.round(3.45678));
+
+//日期 内建对象
+/*var current_date = new Date();
+var today = current_date.getHours();
+console.log(today);
+console.log(current_date.getDay()); 
+var obj = document.getElementById("purchase");
+console.log(typeof obj);*/
+
+
 //input = [1,2,3,7,8,9,15,200] and value = 300 ;  
 //output = ture or false
 function findNumber(array, value) {
@@ -127,20 +153,36 @@ function findNumber(array, value) {
     for (var i = 0; i < array.length; i++) {
         if (value === array[i]) {
             return true;
-
         }
         else {
-            return false;
+            continue;
+            
         }
-
-
+        
     }
-    return value;
-
-
+   
+    return false;
 }
-console.log(findNumber([1,2,3,7,8,9,15,200],15));
+console.log(findNumber([1,2,3,7,8,9,15,200],300));
 
+//数组的反转
 //2.input = [3,4,6,10,11,12];
 //  output = [12,11,10,6,4,3]; 操作数组本身，定义一个变量，值变量；通过换元的方式（input第一个值存起来）
 //var a = input[0]; input[0] = input[input.length - 1]; input[input.length - 1] = a;
+var array = [3,4,6,10,11,12];
+function exchange(array) {
+    
+    for (var i = 0; i < array.length/2; i++) {
+
+        /*var a = array[i];
+        array[i] = array[array.length - (i + 1)];
+        a = array[array.length - (i + 1)];
+        h.push(a);*/
+
+        var a = array[i];
+        array[i] =  array[array.length - (i + 1)];
+        array[array.length - (i + 1)] = a;
+    }
+    return array;
+}
+console.log(exchange(array));
