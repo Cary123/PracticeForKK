@@ -138,20 +138,22 @@ console.log(num);
 console.log(Math.round(3.45678));
 
 //日期 内建对象
-/*var current_date = new Date();
+var current_date = new Date();
 var today = current_date.getHours();
 console.log(today);
 console.log(current_date.getDay()); 
 var obj = document.getElementById("purchase");
-console.log(typeof obj);*/
+console.log(typeof obj);
 
 
 //input = [1,2,3,7,8,9,15,200] and value = 300 ;  
 //output = ture or false
-function findNumber(array, value) {
-    
+/*function findNumber(array, value) {
+    var result = false;
     for (var i = 0; i < array.length; i++) {
         if (value === array[i]) {
+            // result = true;
+            // break;
             return true;
         }
         else {
@@ -161,9 +163,10 @@ function findNumber(array, value) {
         
     }
    
-    return false;
+    return result;
 }
 console.log(findNumber([1,2,3,7,8,9,15,200],300));
+*/
 
 //数组的反转
 //2.input = [3,4,6,10,11,12];
@@ -183,6 +186,85 @@ function exchange(array) {
         array[i] =  array[array.length - (i + 1)];
         array[array.length - (i + 1)] = a;
     }
-    return array;
 }
-console.log(exchange(array));
+exchange(array)
+console.log(array);
+
+function fun2(number) {
+ alert(number)
+}
+
+/*$(document).ready(function () {
+    var btn = $("#btn1")
+    btn.click(function() {
+        $("#div1").css("height", "100px")
+        $("#div1").css("width", "100px")
+        $("#div1").css("background", "red")
+        $("#div1").append("<button style='border-radis:50%'>OKKK</button")
+    })
+
+})*/
+
+/*$(document).ready(function(){
+    $("button").click(
+        function(){
+            $("#btn1").hide();
+
+        }
+    )
+
+});*/
+// 找到button按钮，进行点击事件，点击这个button就会隐藏class为sale1的标签
+/*$(document).ready(function() {
+    $("button").click(function() {
+        $(".sale1").hide();
+    });
+});*/
+
+//隐藏所以元素 *
+/*$(document).ready(function() {
+    $("button").click(function() {
+        $("*").hide();
+    });
+});*/
+
+//选取当前的HTML元素  why it know presenet button is id = "btn1" ?
+/*$(document).ready(function(){
+    $("button").click(function() {
+        $(this).hide();
+    });
+});*/
+
+/*$(document).ready(function() {
+    $("button").click(function(){
+        $("li.sale").hide();
+    });
+});*/
+
+/*$(document).ready(function(){
+    $("button").click(function(){
+        $("ul li:first").hide();
+    });
+});*/
+
+/*$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});*/
+
+/*
+$(document).ready(function(){
+    $("li").click(function(){
+        $(this).hide();
+    });
+});
+*/
+
+$(document).ready(function(){
+    $("li").dblclick(function(){
+        $(this).hide();
+    });
+});
+
+

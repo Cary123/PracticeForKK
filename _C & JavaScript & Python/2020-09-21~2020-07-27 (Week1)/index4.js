@@ -29,6 +29,7 @@ function moveCircle() {
         var color2 = Math.round(Math.random() * 255);
         var color3 = Math.round(Math.random() * 255);
 
+        // circle.style = "border-color:rgb(" + color1 + "," + color2 + "," + color3 + ")"
         circle.style = "border-color:rgb(" + color1 + "," + color2 + "," + color3 + ")"
         circle.style.height = length + "px";
         circle.style.width = length + "px";

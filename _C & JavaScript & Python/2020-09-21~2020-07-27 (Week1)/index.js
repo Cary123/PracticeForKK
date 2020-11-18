@@ -39,7 +39,7 @@ function myfunction(array) {
     return h;
 
 }
-h.push("a")
+
 // console.log(myfunction(Numbers))
 
 // Input:  [1, 2, 5, 6, 79, 1]
@@ -237,3 +237,8 @@ console.log(Numbers1(result2));
 //     console.log("Good night");
 // }
 
+function exec(fun, number) {
+    fun(number)
+}
+
+exec(function(n){ console.log("hello" + n)}, 200)
