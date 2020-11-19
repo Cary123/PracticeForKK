@@ -262,9 +262,47 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-    $("li").dblclick(function(){
-        $(this).hide();
+    $("#id").click(function() {
+        alert("Id slected");
+        $("#sss").click(function() {
+            alert("sss slected")
+        });
+    });
+    // 张三订阅公账号 A
+    // 新消息，提醒张三
+    $(".class").blur(function() {
+        alert("class slected")
+    });
+    $("button").click(function() {
+        alert("button slected")
     });
 });
+
+
+// function $(selector) {
+//     if (selector.startWith("#")) {
+//         return document.getElementById(selector)
+//     } else if (selector.startWith(".")) {
+//         return document.getElementsByClassName(selector)
+//     } else {
+//         return document.getElementsByTagName(selector)
+//     }
+// }
+
+
+// var $ = function(selector) {
+//     if (selector.startWith("#")) {
+//         return document.getElementById(selector)
+//     } else if (selector.startWith(".")) {
+//         return document.getElementsByClassName(selector)
+//     } else {
+//         return document.getElementsByTagName(selector)
+//     }
+// }
+
+
+// 做一个计算器， 支持加法 【4】 【5】 【相加】 【9】
+
+
 
 
