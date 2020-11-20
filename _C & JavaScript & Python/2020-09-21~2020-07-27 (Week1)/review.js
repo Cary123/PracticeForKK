@@ -260,7 +260,7 @@ $(document).ready(function(){
     });
 });
 */
-
+/*
 $(document).ready(function(){
     $("#id").click(function() {
         alert("Id slected");
@@ -277,6 +277,7 @@ $(document).ready(function(){
         alert("button slected")
     });
 });
+*/
 
 
 // function $(selector) {
@@ -302,6 +303,56 @@ $(document).ready(function(){
 
 
 // 做一个计算器， 支持加法 【4】 【5】 【相加】 【9】
+
+/*
+$(document).ready(function(){
+    
+    $(".btn1").click(function(){
+
+    });
+    $(".btn2").click(function(){
+        
+    });
+    $(".btn3").click(function(){
+        
+    });
+});
+*/
+/*
+
+var a = prompt("请输入第一个数： ");
+var b = prompt("请输入第二个数： ");
+a = parseInt(a);
+b = parseInt(b);
+console.log(a + b);
+*/
+
+
+$(document).ready(function(){
+    $(".btn4").click(function(){
+        var num1 = new Number($("#input_01").val());
+        var num2 = new Number($("#input_02").val());
+        
+        alert(num1 + num2);
+        
+    });
+
+    $(".btn5").click(function(){
+        var num1 = new Number($("#input_01").val());
+        var num2 = new Number($("#input_02").val());
+        var result = num1 + num2;
+        $("#input_03").val(result);
+        $("#results_01").text(result);
+        if (result < 0) {
+            $("#results_02").html("<span style='color:red'>"+result+"</span>");
+        } else {
+            $("#results_02").html("<span style='color:blue'>"+result+"</span>");
+        }
+
+    })
+});
+
+
 
 
 
