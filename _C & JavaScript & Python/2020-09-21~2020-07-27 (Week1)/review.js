@@ -348,8 +348,30 @@ $(document).ready(function(){
         } else {
             $("#results_02").html("<span style='color:blue'>"+result+"</span>");
         }
+    });
 
-    })
+    //设置内容和属性
+    // 把 Don't forget to buy this stuff.改为 成功三要素：设置HTML
+     $("#html_1").click(function(){
+         $(".title").html("<h1>成功三要素：</h1>");
+
+     });
+     $("#text_1").click(function(){
+         $(".sale2").text("自信");
+         $(".sale1").text("坚持");
+         $(".sale").text("正确的方向");
+         
+    });
+    $("#value_1").click(function(){
+        $("#input_04").val("ok");
+         
+    });
+    // 把A tin of beans /Cheese  / Milk 改为 自信  坚持  正确的方向  设置文本
+    // 把“输入ok” input框改为 “ok”  设置值
+ 
+
+
+
 });
 
 
