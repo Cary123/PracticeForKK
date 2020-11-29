@@ -29,3 +29,10 @@ $(document).ready(function(){
     })
 });
 
+
+$(document).ready(function(){
+
+    $(".parent").click(function(){
+        $(".title").parent().css({"color":"pink", "border":"10px soild yellow"});
+    });
+});

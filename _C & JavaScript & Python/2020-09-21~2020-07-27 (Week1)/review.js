@@ -364,13 +364,32 @@ $(document).ready(function(){
     });
     $("#value_1").click(function(){
         $("#input_04").val("ok");
+        $.ajax({
+            type: "GET",
+            url: "http://www.tianqiapi.com/api?version=v9&appid=23035354&appsecret=8YvlPNrz",
+            success: function(data) {
+                var city = "<span>" +data.city+ "</span>";
+                var arr1 = data.data;
+                var cards = "<div>";
+                for(var i = 0; i < arr1.length; i++) {
+                    var day = "<span>" +arr1[i].day+ "</span>"
+                    var airLevel =  "<span>" +arr1[i].air_level+ "</span>"
+                    var card = "<div style='display: inline-block; width: 100px; height: 100px; border: 1px solid blue;'>"+day + airLevel +"</div>";
+                    cards = cards + card;
+
+                }
+                cards = cards + "</div>"
+                $("#weather").html("<div>"+city + cards +"</div>")
+            }
+        })
          
     });
     // 把A tin of beans /Cheese  / Milk 改为 自信  坚持  正确的方向  设置文本
     // 把“输入ok” input框改为 “ok”  设置值
  
+    //https://blog.csdn.net/c__chao/article/details/78573737
 
-
+    //https://api.apiopen.top/getJoke?page=1&count=2&type=video
 
 });
 
